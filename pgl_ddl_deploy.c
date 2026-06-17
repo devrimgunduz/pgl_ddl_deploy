@@ -11,7 +11,7 @@ PG_FUNCTION_INFO_V1(pgl_ddl_deploy_current_query);
 PG_FUNCTION_INFO_V1(sql_command_tags);
 
 /* Our own version of debug_query_string - see below */
-const char *pgl_ddl_deploy_debug_query_string;
+static const char *pgl_ddl_deploy_debug_query_string;
 
 /*
  * A near-copy of the current_query postgres function which caches the value, ignoring
